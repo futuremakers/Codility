@@ -97,7 +97,7 @@ public class MaxCounters {
 	}
 	
 	public static int[] soltuion2(int[] A,int N){//100%
-		 int[] counters = new int[N];
+		    int[] counters = new int[N];
 	        int max = 0;
 	        int absMax = 0;
 	 
@@ -123,8 +123,8 @@ public class MaxCounters {
 	}
 	
 	public static void main(String[] args) {
-		 // [6, 7, 6, 6, 8] ->   [3, 2, 2, 4, 2] ->[3, 2, 2, 4, 2]
-		System.out.println(solution(5, new int[]{3,4,4,6,1,4,4}));
+		 // [6, 7, 6, 6, 8] ->   [3, 2, 2, 4, 2] ->[3, 2, 2, 4, 2] 
+		System.out.println(soltuion2( new int[]{3,4,4,6,1,4,4},5));
 	}
 	
 }

@@ -11,7 +11,9 @@ Array A contains only 0s and/or 1s:
         0 represents a car traveling east,
         1 represents a car traveling west.
 
-The goal is to count passing cars. We say that a pair of cars (P, Q), where 0 ≤ P < Q < N, is passing when P is traveling to the east and Q is traveling to the west.
+The goal is to count passing cars. We say that a pair of cars (P, Q), where 0 ≤ P < Q < N, 
+is passing when P is traveling to the east and Q is traveling to the west.
+
 
 For example, consider array A such that:
   A[0] = 0
@@ -56,7 +58,7 @@ Elements of input arrays can be modified.
 public class PassingCars {
 
 	
-	public int solution(int[] A) {
+	public static int solution(int[] A) {
         int countZero = 0;
         int passingCarCount = 0;
         for(int i = 0 ; i < A.length ; i++){
@@ -73,4 +75,8 @@ public class PassingCars {
         }
         return passingCarCount;
     }
+	
+	public static void main(String[] args) {
+		System.out.println(solution(new int[]{0,1,0,1,1}));
+	}
 }

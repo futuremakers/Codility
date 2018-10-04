@@ -13,6 +13,12 @@ public class Palindrome {
             System.out.printf("%s : %b \n", word, isPalindrome(word));
         }
         System.out.println("Duration: "+(System.currentTimeMillis()-startTime));
+        
+        startTime=System.currentTimeMillis();
+        for (String word : words){
+            System.out.printf("%s : %b \n", word, isPalindrome1(word));
+        }
+        System.out.println("Duration: "+(System.currentTimeMillis()-startTime));
     }
 
     /**
@@ -39,6 +45,6 @@ public class Palindrome {
     
     @SuppressWarnings("unused")
 	private static boolean isPalindrome1(String str) {
-    	return str.equals(new StringBuilder(str).reverse());
+    	return str.equals(new StringBuilder(str).reverse().toString());
     }
 }

@@ -87,8 +87,6 @@ public class PermCheck {
 		System.out.println(solution(new int[]{2,5}));
 		System.out.println(solution(new int[]{2,1}));
 		System.out.println(solution(new int[]{3,2}));
-
-
 	}
 	
 	

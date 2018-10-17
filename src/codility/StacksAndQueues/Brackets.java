@@ -38,7 +38,12 @@ Complexity:
 public class Brackets {
 
 	public static void main(String[] args) {
-		solution("{[()()]}");
+		System.out.println(solution("{[()()]}"));
+		System.out.println(solution("{}"));
+		System.out.println(solution("{)(}"));
+		System.out.println(solution("{"));
+		System.out.println(solution(""));
+		
 	}
 
 	

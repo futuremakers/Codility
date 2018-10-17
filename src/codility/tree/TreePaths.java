@@ -73,4 +73,5 @@ public class TreePaths {
 		tree.printPaths(tree.root);
 
 	}
+	
 }

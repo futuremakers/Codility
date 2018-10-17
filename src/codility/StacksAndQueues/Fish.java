@@ -67,7 +67,7 @@ import java.util.Stack;
  */
 public class Fish {
 	public int solution(int[] A, int[] B) {
-		Stack<Integer> s = new Stack<Integer>();
+		Stack<Integer> s = new Stack<>();
 		for (int i = 0; i < A.length; i++) {
 			int size = A[i];
 			int dir = B[i];
@@ -86,5 +86,8 @@ public class Fish {
 			}
 		}
 		return s.size();
+	}
+	public static void main(String[] args) {
+		System.out.println(new Fish().solution(new int[]{4,3,2,1,5}, new int[]{0,1,0,0,0}));
 	}
 }
